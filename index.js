@@ -4,12 +4,14 @@ const requestLogger = require('./utils/requestLogger')
 const errorHandler = require('./utils/errorHandler')
 const db = require('./dbConnection')
 const userRouter = require('./routes/userRouter')
+const cookieParser = require('cookie-parser')
 
 const app = express()
 const port = 4000
 
 //middleware
 app.use(express.json()) 
+app.use(cookieParser)
 app.use(requestLogger)
 app.use('/router', router)
 app.use('/user',userRouter)
