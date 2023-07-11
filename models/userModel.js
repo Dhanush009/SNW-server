@@ -22,6 +22,10 @@ const userSchema = new Schema({
         type: String
     },
 
+    secret:{
+        type: String
+    },
+
     friendList:[String]
 
 })
