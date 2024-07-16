@@ -62,5 +62,6 @@ userSchema.statics.updateFriendList = async (username, id, addFriend = true) => 
 }
 
 
+
 const userModel = mongoose.model('users',userSchema)
 module.exports = userModel
