@@ -7,6 +7,7 @@ router.get('/', (req,res) => {
     res.send(req.path)
 });
 
+
 //http:localhost:4000/router/path
 router.get('/path', (req,res) => {
     console.log(req.path)
